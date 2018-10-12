@@ -1,45 +1,41 @@
+var rad = 60; // Width of the shape
+var xpos, ypos; // Starting position of shape
 
-let birds = 3 ;
-//let-makes variables smaller in scope
-// declare variables here
-//float is a  decimanl number 2.0 1.0003
+var xspeed = 2.8; // Speed of the shape
+var yspeed = 2.2; // Speed of the shape
 
+var xdirection = 1; // Left or Right
+var ydirection = 1; // Top to Bottom
 
 function setup() {
-  createCanvas(600, 500);
-
-  birds= birds+ 1;
-  console.log("there are birds" + birds + "birds")
-  // set background color in grayscale:
-  background(150, 0 , 150);
-
-  // draw rectangle
-  fill(0,0,255);
-  rectMode(CENTER);
-    rect(mouseX, mouseY, 80, 200);
-
-
-  // draw ellipse
-  fill(0,255,0);
-  ellipse(400, 200, 200, 80);
-
+  createCanvas(720, 400);
+  noStroke();
+  frameRate(70);
+  ellipseMode(RADIUS);
+  // Set the starting position of the shape
+  xpos = width / 2;
+  ypos = height / 2;
 }
 
 function draw() {
 
-  //
+  background(110);
+  fill (173,255,47);
+
+  // Update the position of the shape
+  xpos = xpos + xspeed * xdirection;
+  ypos = ypos + yspeed * ydirection;
+
+  // Test to see if the shape exceeds the boundaries of the screen
+  // If it does, reverse its direction by multiplying by -1
+  if (xpos > width - rad || xpos < rad) {
+    xdirection *= -1;
+  }
+  if (ypos > height - rad || ypos < rad) {
+    ydirection *= -1;
+  }
+
+  // Draw the shape
+  fill(34,139,34)
+  ellipse(xpos, ypos, rad, rad);
 }
-
-
-function draw() {
-  background(150);
-  fill(224, 0, 75, 50);
-  stroke(255);
-  strokeweight(10);
-  rectMode(CENTER);
-  rect( mouseX, mouseY, 80, mouseY);
-
-}
-
-
-// write custom functions here
