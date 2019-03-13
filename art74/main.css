@@ -1,0 +1,43 @@
+a:hover {
+background-color: orange;
+}
+
+body {
+  background-color: #6496ED;
+  /*  background-image: url(A649rt75Sec3/videoWorkFlowTemplate/Github/netart/Images/lantern-2639711_960_720.jpg);
+  background-repeat: no-repeat;5
+  background-size: cover;*/
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 30px 20px;
+}
+
+
+
+
+a:link {
+    color: blue;
+}
+
+
+video {
+  margin-top: 50px;
+}
+
+.zipper1-vid {
+  background-color: #96add3;
+  padding: 50px;
+}
+
+h1 {
+  color: #6969CBBB;
+  padding: 20px 0px 10px 0px;
+}
+
+a {
+  color: #69CBBB;
+  text-decoration: none;
+
+}
