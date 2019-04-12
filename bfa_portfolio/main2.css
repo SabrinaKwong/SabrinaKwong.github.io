@@ -1,17 +1,64 @@
+
+html{
+  box-sizing: border-box;
+}
+*, *: before, *:after{
+  box-sizing: inherit;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 body {
   text-align: center;
-  }
+}
 
-  a {
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #96add3;
+}
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: orange;
+}
+
+
+
+
+a{
+color: black;
+text-align: center;
+}
+
+
+a {
   color: #69CBBB;
   text-decoration: none;
-  }
-  margin: 30px auto;
-  max-width: 1000px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
-  padding: 30px 20px;
+}
 
+p{
+margin: 30px auto;
+max-width: 1000px;
+font-family: "Helvetica", "Arial", sans-serif;
+line-height: 1.5;
+padding: 30px 20px;
+}
 
 h1 {
   padding: 20px 0px 10px 0px;
@@ -21,7 +68,6 @@ h2 {
   padding: 15px 400px 20px;
 }
 
-
-p {
+/* p {
   padding: 15px 500px 20px;
-}
+} */
