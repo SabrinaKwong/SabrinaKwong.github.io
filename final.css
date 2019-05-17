@@ -1,0 +1,22 @@
+.rotate-overlay, .playfield {
+display: none:
+}
+
+ @media (orientation : landscape) {
+body{
+background-color: #F44336;
+}
+
+ .rotate-overlay{
+   display: flex;
+ }
+ }
+
+@media (orientation: portrait) {
+  body{
+    background-color: #88C34A;
+      }
+      .playfield {
+        display: flex;
+      }
+}
