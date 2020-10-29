@@ -1,0 +1,278 @@
+/*CSS boiler style sheet*/
+/*body of page will be light-orange*/
+body{
+    background-color:#FFA42A;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*body parahraph is Quicksand*/
+p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: 350;
+    font-size: 5em;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+h2{
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 25px;"
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: black;
+}
+
+h3{
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 35px;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: black;
+}
+
+section {
+  max-width: 40em;
+  margin: 1em auto;
+} 
+
+img{
+    padding-top:30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    max-height: 500px;
+}
+
+li{
+    font-family: 'Quicksand', sans-serif, bold;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 200;
+    font-size: 1.0em;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+footer{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 150;
+    font-size: 1 em;
+    letter-spacing: 4px;
+    color: black;
+}
+
+
+
+* {
+    box-sizing: border-box;
+
+    
+}
+
+.top_bar{
+    max-height: 400px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: block;
+    background-repeat: no-repeat;
+    align-content: left;
+    height: auto;
+    width: 150px;
+    margin: auto;
+}
+
+.navbar ul li{
+    font-family: 'Quicksand', Serif, bold;
+    color: black;
+    text-align: center;
+    font-weight: 350;
+    font-size: 10.5 em;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding-right:12px;
+}
+
+
+.nav_pad{
+  padding-top:10x;
+  text-align: right;
+}
+
+.container
+{
+    padding-top:10x;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.left {
+    float:left;
+}
+
+.myGrid {
+    display: grid;
+    /* Creating grid tracks (rows and columns) */
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 166px 166px 166px;
+/*  grid-gap: 20px; */
+    grid-gap: 20px;
+/* Center grid */
+    margin: 0 auto;
+        /*  margin: 0 auto is shorthand for setting the top and bottom margins to zero, and the left and right margins to auto. */
+    max-width: 790px;
+        /* Defines Max Width for grid. In this case
+        column width x 3 + grid-gap x 2*/
+}
+
+.button_01 {
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 35px;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: black;
+
+}
+
+
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    color: #1F0702;
+    font-size: .99em;
+}
+/*color changes to dark brwon when hovered over*/
+.main-nav a:hover {
+    color: #DB812D;
+}
+
+
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #EBD060;
+    background-color: #EBC360;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.mainheader {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.panel {
+  grid-area: sidebar;
+}
+.mainfooter {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  grid-template-areas: 
+    "header"
+    "sidebar"
+    "content"
+    "footer"
+}
+
+/* 
+  Media Queries borrowed from Sam Norton Flexbox Nav Bar on Codepen
+*/ 
+
+
+@media (min-width: 700px) {
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        .header{
+        width: 70%;
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+    }
+
+}
+
+/* 
+  Media Queries borrowed from G.Craig Hobbs Grid Names Areas w/header and footer on Codepen
+*/ 
+
+
+
+@media (min-width: 800px) {
+  
+  
+  .wrapper {
+    grid-template-columns: 30% 65%;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer"
+  }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
